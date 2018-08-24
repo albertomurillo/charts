@@ -22,7 +22,7 @@ Refer to [nginx-ssl-proxy](https://github.com/GoogleCloudPlatform/nginx-ssl-prox
 To install the chart with the release name `my-release`:
 
 ```bash
-$ helm install --name my-release .
+$ helm install --name my-release albertom/nginx-ssl-proxy
 ```
 
 This command deploys an HTTP reverse proxy using the default configuration.
@@ -55,7 +55,7 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```bash
 $ helm install --name my-release \
   --set proxy.targetService=jenkins:8080,proxy.enableBasicAuth=true \
-  .
+  albertom/nginx-ssl-proxy
 ```
 
 The above command deploys an HTTPS reverse proxy for jenkins service located at `jenkins:8080` in the Kubernetes cluster and adds basic authentication.
@@ -63,7 +63,7 @@ The above command deploys an HTTPS reverse proxy for jenkins service located at 
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```bash
-$ helm install --name my-release -f values.yaml .
+$ helm install --name my-release -f values.yaml albertom/nginx-ssl-proxy
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
