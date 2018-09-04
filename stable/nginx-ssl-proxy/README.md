@@ -45,10 +45,12 @@ The following table lists the configurable parameters of the MySQL chart and the
 | `image.tag`             | `nginx-ssl-proxy` release tag              | `latest`                   |
 | `image.pullPolicy`      | Image pull policy                          | `IfNotPresentsql`          |
 | `service.type`          | Kubernetes service type                    | `LoadBalancer`             |
+| `service.annotations`   | Service annotations                        | `{}`                       |
 | `proxy.targetService`   | Kubernetes target service                  | `jenkins:8080`             |
 | `proxy.enableSSL`       | Enables SSL reverse proxy                  | `true`                     |
 | `proxy.enableBasicAuth` | Enable basic authentication                | `false`                    |
 | `proxy.secretName`      | Kubernetes secret holding the certificates | `nginx-ssl-proxy-secret`   |
+
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

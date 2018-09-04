@@ -11,6 +11,7 @@ image:
 
 service:
   type: LoadBalancer
+  annotations: {}
 
 proxy:
   targetService: jenkins:8080
