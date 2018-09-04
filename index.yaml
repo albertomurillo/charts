@@ -3,7 +3,17 @@ entries:
   nginx-ssl-proxy:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-08-24T15:56:18.686052577-07:00
+    created: 2018-09-04T11:37:25.092553302-07:00
+    description: A chart to deploy a reverse HTTPS proxy for unsecured Kubernetes
+      services
+    digest: 5a7cfae68b17b85be62632a4f0f22ccc305dea4b827e4cedbd746498eee08ce6
+    name: nginx-ssl-proxy
+    urls:
+    - nginx-ssl-proxy-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-09-04T11:37:25.09225944-07:00
     description: A chart to deploy a reverse HTTPS proxy for unsecured Kubernetes
       services
     digest: 64d7bbc69ffc42c8a8526cb2099b7df19ac917e780541ddc2db25ae6f79aec16
@@ -11,4 +21,4 @@ entries:
     urls:
     - nginx-ssl-proxy-0.1.0.tgz
     version: 0.1.0
-generated: 2018-08-24T15:56:18.683448593-07:00
+generated: 2018-09-04T11:37:25.091688168-07:00
